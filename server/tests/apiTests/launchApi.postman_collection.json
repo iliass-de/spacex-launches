@@ -23,8 +23,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5000/launchApi/launches",
-					"protocol": "https",
+					"raw": "http://localhost:5000/launchApi/launches",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
@@ -43,8 +43,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5000/launchApi/past",
-					"protocol": "https",
+					"raw": "http://localhost:5000/launchApi/past",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
@@ -74,8 +74,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5000/launchApi/launch/67",
-					"protocol": "https",
+					"raw": "http://localhost:5000/launchApi/launch/67",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
@@ -106,8 +106,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5000/launchApi/upcoming",
-					"protocol": "https",
+					"raw": "http://localhost:5000/launchApi/upcoming",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
