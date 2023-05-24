@@ -21,9 +21,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./launchApi/launchApi.csproj
+      run: dotnet restore ./server/launchApi/launchApi.csproj
     - name: Build
-      run: dotnet build ./launchApi/launchApicsproj --no-restore
+      run: dotnet build ./server/launchApi/launchApicsproj --no-restore
     - name: Depcheck
       uses: dependency-check/Dependency-Check_Action@main
       id: Depcheck
@@ -54,11 +54,11 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Run
-        run: dotnet run ./launchApi/launchApi.csproj --no-restore
+        run: dotnet run ./server/launchApi/launchApi.csproj --no-restore
       - name: Prepare newman
         run: npm install -g newman
       - name: Run test with newman
-        run: newman run ./tests/apiTests/launchApi.postman_collection.json --verbose 2>&1 | tee apiTest_report
+        run: newman run ./server/tests/apiTests/launchApi.postman_collection.json --verbose 2>&1 | tee apiTest_report
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
