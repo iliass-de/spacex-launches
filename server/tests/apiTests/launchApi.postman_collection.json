@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "3af41630-aaed-4669-aa8d-eb99c52d7bcd",
+		"name": "launchApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllLaunches",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7226/launchApi/launches",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7226",
+					"path": [
+						"launchApi",
+						"launches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPastLaunches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7226/launchApi/past",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7226",
+					"path": [
+						"launchApi",
+						"past"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleLaunch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.expect(pm.response.code).to.be.oneOf([200,201]);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7226/launchApi/launch/67",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7226",
+					"path": [
+						"launchApi",
+						"launch",
+						"67"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upcomigLaunches",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
