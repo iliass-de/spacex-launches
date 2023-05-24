@@ -11,6 +11,7 @@
     "ag-grid-community": "^29.3.5",
     "ag-grid-vue3": "^29.3.5",
     "core-js": "^3.8.3",
+    "usemodal-vue3": "^0.3.7",
     "vue": "^3.2.13"
   },
   "devDependencies": {
